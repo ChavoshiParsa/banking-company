@@ -1,4 +1,8 @@
+'use client'
+
+import { cn } from '@/lib/utils'
 import Link from 'next/link'
+import { useSelectedLayoutSegment } from 'next/navigation'
 
 export default function NavItem({
   name,
@@ -7,8 +11,15 @@ export default function NavItem({
   name: string
   link: string
 }) {
+  const segment = useSelectedLayoutSegment()
+  let params = segment === null ? '' : segment
+
   return (
-    <li>
+    <li
+      className={cn(
+        `${params === link && 'rounded-[82px] bg-shade-grey-15 px-[18px] py-[10px]'}`,
+      )}
+    >
       <Link href={`/${link}`}>{name}</Link>
     </li>
   )

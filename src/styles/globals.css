@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply m-0 box-border bg-shade-grey-10 p-0 text-white;
+  @apply m-0 box-border min-h-screen bg-shade-grey-10 p-0 text-white;
 }
 
 @layer utilities {

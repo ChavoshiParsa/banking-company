@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { BankLogo } from '../ui/Icons'
 import NavItem from './NavItem'
 
-export default function Navbar() {
+export default function Header() {
   return (
     <header className='px-20 py-[30px] text-sm'>
       <div className='flex items-center justify-between rounded-full border border-shade-grey-15 bg-shade-grey-11 px-6 py-4'>
