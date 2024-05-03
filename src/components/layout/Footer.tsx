@@ -1,14 +1,12 @@
-import Link from 'next/link'
-import {
-  BankLogo,
-  EmailIcon,
-  FacebookIcon,
-  LinkedInIcon,
-  LocationIcon,
-  PhoneIcon,
-  TwitterIcon,
-} from '../ui/Icons'
-import Divider from '../ui/Divider'
+import Divider from './Divider'
+import Logo from '/public/icons/Logo.svg'
+import Email from '/public/icons/Email.svg'
+import Phone from '/public/icons/Phone.svg'
+import Location from '/public/icons/Location.svg'
+import Facebook from '/public/icons/Facebook.svg'
+import Twitter from '/public/icons/Twitter.svg'
+import Linkedin from '/public/icons/Linkedin.svg'
+import FooterNavItem from './FooterNavItem'
 
 export default function Footer() {
   return (
@@ -17,29 +15,29 @@ export default function Footer() {
         <div className='flex flex-col items-center justify-center space-y-10'>
           <div className='flex items-center justify-center'>
             <div className='m-1'>
-              <BankLogo size={28} />
+              <Logo className='size-[34px]' />
             </div>
             <h1 className='text-xl'>YourBanK</h1>
           </div>
           <nav className='flex list-none items-center justify-center space-x-6 text-shade-white-90'>
-            <NavItem link='' name='Home' />
-            <NavItem link='careers' name='Careers' />
-            <NavItem link='about' name='About' />
-            <NavItem link='security' name='Security' />
+            <FooterNavItem link='' name='Home' />
+            <FooterNavItem link='careers' name='Careers' />
+            <FooterNavItem link='about' name='About' />
+            <FooterNavItem link='security' name='Security' />
           </nav>
         </div>
         <Divider color='border-shade-grey-15' />
         <div className='flex items-center justify-center space-x-5 text-shade-white-90'>
           <div className='flex items-center justify-center space-x-1.5'>
-            <EmailIcon size={20} />
+            <Email />
             <span>hello@skillbirdge.com</span>
           </div>
           <div className='flex items-center justify-center space-x-1.5'>
-            <PhoneIcon size={20} />
+            <Phone />
             <span>+91 91813 23 2309</span>
           </div>
           <div className='flex items-center justify-center space-x-1.5'>
-            <LocationIcon size={20} />
+            <Location />
             <span>Somewhere in the World</span>
           </div>
         </div>
@@ -47,13 +45,13 @@ export default function Footer() {
         <div className='flex w-full items-center justify-between rounded-full border border-shade-grey-15 bg-shade-grey-10 py-3 pl-3 pr-6 text-shade-grey-70'>
           <div className='flex items-center justify-center space-x-2'>
             <div className='rounded-full bg-shade-green-60 p-3'>
-              <FacebookIcon size={20} />
+              <Facebook />
             </div>
             <div className='rounded-full bg-shade-green-60 p-3'>
-              <TwitterIcon size={20} />
+              <Twitter />
             </div>
             <div className='rounded-full bg-shade-green-60 p-3'>
-              <LinkedInIcon size={20} />
+              <Linkedin />
             </div>
           </div>
           <span className='text-sm font-light'>
@@ -65,13 +63,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
-}
-
-function NavItem({ name, link }: { name: string; link: string }) {
-  return (
-    <li>
-      <Link href={`/${link}`}>{name}</Link>
-    </li>
   )
 }

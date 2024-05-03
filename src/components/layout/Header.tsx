@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { BankLogo } from '../ui/Icons'
-import NavItem from './NavItem'
+import HeaderNavItem from './HeaderNavItem'
+import Logo from '/public/icons/Logo.svg'
 
 export default function Header() {
   return (
@@ -8,15 +8,15 @@ export default function Header() {
       <div className='flex items-center justify-between rounded-full border border-shade-grey-15 bg-shade-grey-11 px-6 py-4'>
         <div className='flex items-center justify-center'>
           <div className='m-1'>
-            <BankLogo size={26} />
+            <Logo className='size-[30px]' />
           </div>
           <h1 className='text-lg'>YourBanK</h1>
         </div>
         <nav className='flex list-none items-center justify-center space-x-6'>
-          <NavItem link='' name='Home' />
-          <NavItem link='careers' name='Careers' />
-          <NavItem link='about' name='About' />
-          <NavItem link='security' name='Security' />
+          <HeaderNavItem link='' name='Home' />
+          <HeaderNavItem link='careers' name='Careers' />
+          <HeaderNavItem link='about' name='About' />
+          <HeaderNavItem link='security' name='Security' />
         </nav>
         <div className='flex items-center justify-center space-x-5'>
           <Link href='/sign-up'>Sign Up</Link>

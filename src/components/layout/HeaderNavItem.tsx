@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import { useSelectedLayoutSegment } from 'next/navigation'
 
-export default function NavItem({
+export default function HeaderNavItem({
   name,
   link,
 }: {
