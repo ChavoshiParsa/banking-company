@@ -21,7 +21,7 @@ export default function Header() {
         <div className='flex items-center justify-center space-x-5'>
           <Link href='/sign-up'>Sign Up</Link>
           <Link
-            className='rounded-[82px] bg-shade-green-60 px-6 py-3 text-shade-grey-11'
+            className='rounded-full bg-shade-green-60 px-6 py-3 text-shade-grey-11'
             href='/login'
           >
             Login

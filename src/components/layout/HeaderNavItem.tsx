@@ -17,7 +17,7 @@ export default function HeaderNavItem({
   return (
     <li
       className={cn(
-        `${params === link && 'rounded-[82px] bg-shade-grey-15 px-[18px] py-[10px]'}`,
+        `${params === link && 'rounded-full bg-shade-grey-15 px-[18px] py-2.5'}`,
       )}
     >
       <Link href={`/${link}`}>{name}</Link>
