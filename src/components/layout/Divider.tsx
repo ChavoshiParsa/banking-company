@@ -1,5 +1,3 @@
-import { cn } from '@/lib/utils'
-
-export default function Divider({ color }: { color: string }) {
-  return <div className={cn('w-full border-t', color)} />
+export default function Divider() {
+  return <div className='w-full border-t border-shade-grey-15' />
 }

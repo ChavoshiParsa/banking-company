@@ -10,7 +10,7 @@ import FooterNavItem from './FooterNavItem'
 
 export default function Footer() {
   return (
-    <footer className='bg-shade-grey-11 px-20 pb-[30px] pt-[60px]'>
+    <footer className='mt-28 bg-shade-grey-11 px-20 pb-[30px] pt-[60px]'>
       <div className='flex flex-col items-center justify-center space-y-10'>
         <div className='flex flex-col items-center justify-center space-y-10'>
           <div className='flex items-center justify-center'>
@@ -26,7 +26,7 @@ export default function Footer() {
             <FooterNavItem link='security' name='Security' />
           </nav>
         </div>
-        <Divider color='border-shade-grey-15' />
+        <Divider />
         <div className='flex items-center justify-center space-x-5 text-shade-white-90'>
           <div className='flex items-center justify-center space-x-1.5'>
             <Email />
@@ -41,7 +41,7 @@ export default function Footer() {
             <span>Somewhere in the World</span>
           </div>
         </div>
-        <Divider color='border-shade-grey-15' />
+        <Divider />
         <div className='flex w-full items-center justify-between rounded-full border border-shade-grey-15 bg-shade-grey-10 py-3 pl-3 pr-6 text-shade-grey-70'>
           <div className='flex items-center justify-center space-x-2'>
             <div className='rounded-full bg-shade-green-60 p-3'>
