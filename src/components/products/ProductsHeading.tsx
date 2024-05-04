@@ -1,6 +1,6 @@
 export default function ProductsHeading() {
   return (
-    <div className='flex w-full flex-col'>
+    <div className='flex w-full flex-col space-y-1'>
       <h1 className='text-[38px] font-medium'>
         Our <span className='text-shade-green-60'>Products</span>
       </h1>

@@ -1,4 +1,3 @@
-import Divider from './Divider'
 import Logo from '/public/icons/Logo.svg'
 import Email from '/public/icons/Email.svg'
 import Phone from '/public/icons/Phone.svg'
@@ -7,10 +6,11 @@ import Facebook from '/public/icons/Facebook.svg'
 import Twitter from '/public/icons/Twitter.svg'
 import Linkedin from '/public/icons/Linkedin.svg'
 import FooterNavItem from './FooterNavItem'
+import Divider from './Divider'
 
 export default function Footer() {
   return (
-    <footer className='mt-28 bg-shade-grey-11 px-20 pb-[30px] pt-[60px]'>
+    <footer className='bg-shade-grey-11 px-20 pb-[30px] pt-[60px]'>
       <div className='flex flex-col items-center justify-center space-y-10'>
         <div className='flex flex-col items-center justify-center space-y-10'>
           <div className='flex items-center justify-center'>
