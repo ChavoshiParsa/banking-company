@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import UseCaseItem from './UseCaseItem'
-import Divider from './Divider'
 import UseCasePercent from './UseCasePercent'
 import StartupsEntrepreneurs from '/public/icons/StartupsEntrepreneurs.svg'
 import CashFlowManagement from '/public/icons/CashFlowManagement.svg'
@@ -22,9 +21,9 @@ export default function ForBusiness() {
         </div>
         <div className='flex items-start justify-center space-x-12'>
           <UseCasePercent percent={65} title='Cash Flow Management' />
-          <Divider />
+          <div className='h-24 border-r border-dashed border-shade-grey-15' />
           <UseCasePercent percent={70} title='Drive Business Expansion' />
-          <Divider />
+          <div className='h-24 border-r border-dashed border-shade-grey-15' />
           <UseCasePercent percent={45} title='Streamline payroll processing' />
         </div>
         <button className='rounded-full border border-shade-grey-15 bg-shade-grey-11 px-5 py-3.5 text-sm'>

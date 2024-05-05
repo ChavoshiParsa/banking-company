@@ -9,6 +9,8 @@ import ForBusiness from '@/components/use-cases/ForBusiness'
 import FeaturesHeading from '@/components/features/FeaturesHeading'
 import FeatureSelect from '@/components/features/FeatureSelect'
 import FeatureGrid from '@/components/features/FeatureGrid'
+import FAQHeading from '@/components/faq/FAQHeading'
+import FAQGrid from '@/components/faq/FAQGrid'
 
 export default function Home() {
   return (
@@ -55,6 +57,13 @@ export default function Home() {
             <FeatureSelect />
             <FeatureGrid />
           </div>
+        </section>
+        <section
+          className='flex w-full flex-col items-start justify-center space-y-[60px] py-14'
+          id='features'
+        >
+          <FAQHeading />
+          <FAQGrid />
         </section>
       </main>
     </>

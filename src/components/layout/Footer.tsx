@@ -6,7 +6,6 @@ import Facebook from '/public/icons/Facebook.svg'
 import Twitter from '/public/icons/Twitter.svg'
 import Linkedin from '/public/icons/Linkedin.svg'
 import FooterNavItem from './FooterNavItem'
-import Divider from './Divider'
 
 export default function Footer() {
   return (
@@ -26,7 +25,7 @@ export default function Footer() {
             <FooterNavItem link='security' name='Security' />
           </nav>
         </div>
-        <Divider />
+        <div className='w-full border-t border-shade-grey-15' />
         <div className='flex items-center justify-center space-x-5 text-shade-white-90'>
           <div className='flex items-center justify-center space-x-1.5'>
             <Email />
@@ -41,7 +40,7 @@ export default function Footer() {
             <span>Somewhere in the World</span>
           </div>
         </div>
-        <Divider />
+        <div className='w-full border-t border-shade-grey-15' />
         <div className='flex w-full items-center justify-between rounded-full border border-shade-grey-15 bg-shade-grey-10 py-3 pl-3 pr-6 text-shade-grey-70'>
           <div className='flex items-center justify-center space-x-2'>
             <div className='rounded-full bg-shade-green-60 p-3'>

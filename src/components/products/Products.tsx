@@ -2,7 +2,6 @@ import ProductItem from './ProductItem'
 import CheckingAccounts from '/public/icons/CheckingAccounts.svg'
 import SavingsAccounts from '/public/icons/SavingsAccounts.svg'
 import LoansMortgages from '/public/icons/LoansMortgages.svg'
-import Divider from './Divider'
 
 export default function Products() {
   return (
@@ -12,13 +11,13 @@ export default function Products() {
         title='Checking Accounts'
         info='Enjoy easy and convenient access to your funds with our range of checking account options. Benefit from features such as online and mobile banking, debit cards, and free ATM access.'
       />
-      <Divider />
+      <div className='h-72 border-r border-shade-grey-15' />
       <ProductItem
         Icon={SavingsAccounts}
         title='Savings Accounts'
         info="Build your savings with our competitive interest rates and flexible savings account options. Whether you're saving for a specific goal or want to grow your wealth over time, we have the right account for you."
       />
-      <Divider />
+      <div className='h-72 border-r border-shade-grey-15' />
       <ProductItem
         Icon={LoansMortgages}
         title='Loans and Mortgages'

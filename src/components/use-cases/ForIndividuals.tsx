@@ -5,7 +5,6 @@ import SavingFuture from '/public/icons/SavingFuture.svg'
 import Homeownership from '/public/icons/Homeownership.svg'
 import EducationFunding from '/public/icons/EducationFunding.svg'
 import UseCasePercent from './UseCasePercent'
-import Divider from './Divider'
 
 export default function sForIndividuals() {
   return (
@@ -39,9 +38,9 @@ export default function sForIndividuals() {
         </div>
         <div className='flex items-start justify-center space-x-12'>
           <UseCasePercent percent={78} title='Secure Retirement Planning' />
-          <Divider />
+          <div className='h-24 border-r border-dashed border-shade-grey-15' />
           <UseCasePercent percent={63} title='Manageable Debt Consolidation' />
-          <Divider />
+          <div className='h-24 border-r border-dashed border-shade-grey-15' />
           <UseCasePercent percent={91} title='Reducing financial burdens' />
         </div>
         <button className='rounded-full border border-shade-grey-15 bg-shade-grey-11 px-5 py-3.5 text-sm'>
