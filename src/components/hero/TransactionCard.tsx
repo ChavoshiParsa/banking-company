@@ -10,26 +10,26 @@ import ExchangeTable from './ExchangeTable'
 export default function TransactionCard() {
   return (
     <div className='relative mr-32 w-full max-w-[420px] rounded-lg bg-gradient-to-br from-shade-grey-15 via-[#CAFF3333] to-shade-grey-15 p-px'>
-      <div className='flex w-full flex-col items-center justify-center space-y-5 rounded-lg bg-[#1A1A1A] p-7'>
+      <div className='relative flex w-full flex-col items-center justify-center space-y-5 rounded-lg bg-[#1A1A1A] p-7'>
         <h2 className='self-start text-sm font-medium'>Your Transactions</h2>
         <div className='flex w-full flex-col items-center justify-center'>
           <TransactionsPopup
             fullName='Joel Kenley'
             type='sub'
             amount={68}
-            className='z-20 w-full'
+            className='z-40 w-full'
           />
           <TransactionsPopup
             fullName='Mark Smith'
             type='add'
             amount={54}
-            className='z-10 -mt-4 w-11/12 opacity-50'
+            className='z-30 -mt-4 w-11/12 opacity-50'
           />
           <TransactionsPopup
             fullName='Lenen Roy'
             type='sub'
             amount={26}
-            className='z-0 -mt-4 w-10/12 opacity-20'
+            className='z-20 -mt-4 w-10/12 opacity-20'
           />
         </div>
         <h2 className='self-start text-sm font-medium'>Money Exchange</h2>
