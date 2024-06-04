@@ -6,7 +6,7 @@ export default function UseCasePercent({
   title: string
 }) {
   return (
-    <div className='flex flex-col items-start justify-center'>
+    <div className='flex flex-col items-center justify-center md:items-start'>
       <span className='text-[40px] font-medium text-shade-green-60'>
         {percent}%
       </span>

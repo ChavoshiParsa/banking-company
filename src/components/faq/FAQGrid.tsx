@@ -4,7 +4,7 @@ import ArrowDown from '/public/icons/ArrowDown.svg'
 export default function FAQGrid() {
   return (
     <div className='flex flex-col items-center justify-center'>
-      <div className='relative grid grid-cols-2 gap-5'>
+      <div className='relative grid grid-cols-1 gap-5 md:grid-cols-2'>
         <FAQItem
           question='How do I open an account with YourBank?'
           answer='Opening an account with YourBank is easy. Simply visit our website and click on the "Open an Account" button. Follow the prompts, provide the required information, and complete the application process. If you have any questions or need assistance, our customer support team is available to help.'

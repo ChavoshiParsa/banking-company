@@ -1,11 +1,11 @@
 export default function ProductsHeading() {
   return (
-    <div className='flex w-full flex-col space-y-1'>
-      <h1 className='text-[38px] font-medium'>
+    <div className='flex w-full flex-col space-y-3 text-center md:space-y-0 md:text-left'>
+      <h1 className='text-[28px] font-medium leading-10 md:text-[38px]'>
         Our <span className='text-shade-green-60'>Products</span>
       </h1>
-      <div className='flex items-center justify-between'>
-        <p className='max-w-[820px] font-light text-shade-grey-70'>
+      <div className='flex flex-col items-center justify-between space-y-5 md:flex-row md:space-y-0'>
+        <p className='max-w-[820px] text-sm font-light text-shade-grey-70 md:text-base'>
           Discover a range of comprehensive and customizable banking products at
           YourBank, designed to suit your unique financial needs and aspirations
         </p>

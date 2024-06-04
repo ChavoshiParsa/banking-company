@@ -2,7 +2,7 @@ import FeatureItem from './FeatureItem'
 
 export default function FeatureGrid() {
   return (
-    <div className='grid w-full flex-grow grid-cols-2 gap-5'>
+    <div className='grid w-full flex-grow grid-cols-1 gap-5 md:grid-cols-2'>
       <FeatureItem
         title='24/7 Account Access'
         info='Enjoy the convenience of accessing your accounts anytime, anywhere through our secure online banking platform. Check balances, transfer funds, and pay bills with ease.'

@@ -9,16 +9,16 @@ import FooterNavItem from './FooterNavItem'
 
 export default function Footer() {
   return (
-    <footer className='bg-shade-grey-11 px-20 pb-[30px] pt-[60px]'>
-      <div className='flex flex-col items-center justify-center space-y-10'>
-        <div className='flex flex-col items-center justify-center space-y-10'>
+    <footer className='bg-shade-grey-11 px-4 pb-[30px] pt-[50px] xs:px-20 xs:pt-[60px]'>
+      <div className='flex flex-col items-center justify-center space-y-[30px]'>
+        <div className='flex flex-col items-center justify-center space-y-6 xs:space-y-10'>
           <div className='flex items-center justify-center'>
             <div className='m-1'>
               <Logo className='size-[34px]' />
             </div>
             <h1 className='text-xl'>YourBanK</h1>
           </div>
-          <nav className='flex list-none items-center justify-center space-x-6 text-shade-white-90'>
+          <nav className='flex list-none items-center justify-center space-x-3.5 text-sm text-shade-white-90 xs:space-x-6 xs:text-base'>
             <FooterNavItem link='' name='Home' />
             <FooterNavItem link='careers' name='Careers' />
             <FooterNavItem link='about' name='About' />
@@ -26,12 +26,12 @@ export default function Footer() {
           </nav>
         </div>
         <div className='w-full border-t border-shade-grey-15' />
-        <div className='flex items-center justify-center space-x-5 text-shade-white-90'>
-          <div className='flex items-center justify-center space-x-1.5'>
+        <div className='flex flex-wrap items-center justify-center text-sm text-shade-white-90 xs:space-x-5 xs:text-base'>
+          <div className='mb-5 mr-3 flex items-center justify-center space-x-1.5 xs:mb-0 xs:mr-0'>
             <Email />
             <span>hello@skillbirdge.com</span>
           </div>
-          <div className='flex items-center justify-center space-x-1.5'>
+          <div className='mb-5 flex items-center justify-center space-x-1.5 xs:mb-0 xs:mr-0'>
             <Phone />
             <span>+91 91813 23 2309</span>
           </div>
@@ -41,8 +41,8 @@ export default function Footer() {
           </div>
         </div>
         <div className='w-full border-t border-shade-grey-15' />
-        <div className='flex w-full items-center justify-between rounded-full border border-shade-grey-15 bg-shade-grey-10 py-3 pl-3 pr-6 text-shade-grey-70'>
-          <div className='flex items-center justify-center space-x-2'>
+        <div className='flex w-full flex-col items-center justify-between space-y-5 rounded-xl border border-shade-grey-15 bg-shade-grey-10 pb-6 pl-3 pr-6 pt-3 text-shade-grey-70 md:flex-row md:space-y-0 md:rounded-full md:py-3'>
+          <div className='-mt-8 flex items-center justify-center space-x-2 md:mt-0'>
             <div className='rounded-full bg-shade-green-60 p-3'>
               <Facebook />
             </div>

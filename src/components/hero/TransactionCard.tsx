@@ -9,7 +9,7 @@ import ExchangeTable from './ExchangeTable'
 
 export default function TransactionCard() {
   return (
-    <div className='relative mr-32 w-full max-w-[420px] rounded-lg bg-gradient-to-br from-shade-grey-15 via-[#CAFF3333] to-shade-grey-15 p-px'>
+    <div className='relative w-full max-w-[420px] scale-[0.8] rounded-lg bg-gradient-to-br from-shade-grey-15 via-[#CAFF3333] to-shade-grey-15 p-px md:mr-32 md:scale-100'>
       <div className='relative flex w-full flex-col items-center justify-center space-y-5 rounded-lg bg-[#1A1A1A] p-7'>
         <h2 className='self-start text-sm font-medium'>Your Transactions</h2>
         <div className='flex w-full flex-col items-center justify-center'>
@@ -48,7 +48,7 @@ export default function TransactionCard() {
         </div>
       </div>
       <Image
-        className='absolute -right-44 -top-2 -z-10 w-auto'
+        className='absolute -right-20 -top-10 -z-10 w-auto md:-right-44 md:-top-2'
         src='/images/Arrows.png'
         alt='curved dots'
         width={540}

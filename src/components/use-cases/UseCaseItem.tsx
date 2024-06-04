@@ -8,9 +8,9 @@ export default function UseCaseItem({
   title: string
 }) {
   return (
-    <div className='z-10 flex flex-col items-center justify-center space-y-[14px] rounded-xl border border-shade-grey-15 bg-shade-grey-10 p-6'>
+    <div className='z-10 flex flex-col items-center justify-center space-y-[14px] rounded-xl border border-shade-grey-15 bg-shade-grey-10 px-3.5 py-5 md:p-6'>
       <Icon />
-      <h2 className='text-center'>{title}</h2>
+      <h2 className='text-center text-sm md:text-base'>{title}</h2>
     </div>
   )
 }
