@@ -8,9 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      screens: {
-        xs: '400px',
-      },
       colors: {
         'shade-green': {
           60: '#CAFF33',

@@ -19,14 +19,14 @@ export default function Home() {
   return (
     <>
       <Image
-        className='absolute -left-2.5 -top-5 -z-10 h-[300px] w-[380px] xs:-left-10 xs:-top-20 xs:h-[440px] xs:w-[540px]'
+        className='absolute -left-2.5 -top-5 -z-10 h-[300px] w-[380px] md:-left-10 md:-top-20 md:h-[440px] md:w-[540px]'
         src='/images/Dots1.png'
         alt='curved dots'
         width={540}
         height={440}
         priority
       />
-      <main className='flex flex-col items-center justify-center overflow-hidden [&>*]:px-4 xs:[&>*]:px-20'>
+      <main className='flex flex-col items-center justify-center overflow-hidden [&>*]:px-4 md:[&>*]:px-20'>
         <section
           className='flex w-full flex-col items-center justify-between space-y-20 py-6 md:flex-row md:items-start md:space-y-0 md:py-14'
           id='hero'

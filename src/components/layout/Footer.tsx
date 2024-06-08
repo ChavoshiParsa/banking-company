@@ -9,16 +9,16 @@ import FooterNavItem from './FooterNavItem'
 
 export default function Footer() {
   return (
-    <footer className='bg-shade-grey-11 px-4 pb-[30px] pt-[50px] xs:px-20 xs:pt-[60px]'>
+    <footer className='bg-shade-grey-11 px-4 pb-[30px] pt-[50px] md:px-20 md:pt-[60px]'>
       <div className='flex flex-col items-center justify-center space-y-[30px]'>
-        <div className='flex flex-col items-center justify-center space-y-6 xs:space-y-10'>
+        <div className='flex flex-col items-center justify-center space-y-6 md:space-y-10'>
           <div className='flex items-center justify-center'>
             <div className='m-1'>
               <Logo className='size-[34px]' />
             </div>
             <h1 className='text-xl'>YourBanK</h1>
           </div>
-          <nav className='flex list-none items-center justify-center space-x-3.5 text-sm text-shade-white-90 xs:space-x-6 xs:text-base'>
+          <nav className='flex list-none items-center justify-center space-x-3.5 text-sm text-shade-white-90 md:space-x-6 md:text-base'>
             <FooterNavItem link='' name='Home' />
             <FooterNavItem link='careers' name='Careers' />
             <FooterNavItem link='about' name='About' />
@@ -26,12 +26,12 @@ export default function Footer() {
           </nav>
         </div>
         <div className='w-full border-t border-shade-grey-15' />
-        <div className='flex flex-wrap items-center justify-center text-sm text-shade-white-90 xs:space-x-5 xs:text-base'>
-          <div className='mb-5 mr-3 flex items-center justify-center space-x-1.5 xs:mb-0 xs:mr-0'>
+        <div className='flex flex-wrap items-center justify-center text-sm text-shade-white-90 md:space-x-5 md:text-base'>
+          <div className='mb-5 mr-3 flex items-center justify-center space-x-1.5 md:mb-0 md:mr-0'>
             <Email />
             <span>hello@skillbirdge.com</span>
           </div>
-          <div className='mb-5 flex items-center justify-center space-x-1.5 xs:mb-0 xs:mr-0'>
+          <div className='mb-5 flex items-center justify-center space-x-1.5 md:mb-0 md:mr-0'>
             <Phone />
             <span>+91 91813 23 2309</span>
           </div>
